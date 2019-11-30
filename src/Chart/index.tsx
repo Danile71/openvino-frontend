@@ -31,7 +31,6 @@ export class BarChart extends React.Component<any, any> {
                 },
                 xaxis: {
                     categories: ['2','3','4'],
-                    // categories: ['2. Обратили внимание','3. Получили промокод', '4. Купили по промокоду'],
                     labels: {
                         formatter: function(val: any) {
                             return val + " чел.";
@@ -88,38 +87,6 @@ export class BarChart extends React.Component<any, any> {
             series: this.props.data
         };
     }
-
-    // data: {
-    //     women: [
-    //         {
-    //             name: "Возраст 16 - 25",
-    //             data: [44, 33, 22, 11]
-    //         },
-    //         {
-    //             name: "Возраст 26 - 35",
-    //             data: [44, 33, 22, 11]
-    //         },
-    //         {
-    //             name: "Возраст 35+",
-    //             data: [44, 33, 22, 11]
-    //         },
-    //     ],
-    //     men: [
-    //         {
-    //             name: "Возраст 16 - 25",
-    //             data: [44, 33, 22, 11]
-    //         },
-    //         {
-    //             name: "Возраст 26 - 35",
-    //             data: [44, 33, 22, 11]
-    //         },
-    //         {
-    //             name: "Возраст 35+",
-    //             data: [44, 33, 22, 11]
-    //         },
-    //     ],
-    //     categories: ['1. Проходы','2. Обратили внимание','3. Получили промокод', '4. Купили по промокоду']
-    // }
 
     render() {
         return (

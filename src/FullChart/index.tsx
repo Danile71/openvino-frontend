@@ -25,7 +25,6 @@ export class FullChart extends React.Component<any, any> {
                     colors: ["#fff"]
                 },
                 title: {
-                    // text: this.props.title,
                     style: {
                         fontSize: '22px'
                     }
@@ -38,7 +37,6 @@ export class FullChart extends React.Component<any, any> {
                 },
                 yaxis: {
                     labels: {
-                        // rotate: -45,
                         style: {
                             fontSize: '12px'
                         },
@@ -62,7 +60,6 @@ export class FullChart extends React.Component<any, any> {
                         fontSize: '14px'
                     },
                     formatter: (val: any, opt: any) => {
-                        console.log(opt)
                         return 'Всего проходов: ' + opt.w.globals.seriesTotals
                     },
                     dropShadow: {
