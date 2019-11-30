@@ -1,0 +1,52 @@
+.arrow-icon {
+  background: url("../images/down-arrow.svg") no-repeat center center;
+  background-size: contain;
+  width: 70px;
+  height: 70px;
+  animation: slide 1s infinite ease-in alternate;
+  cursor: pointer;
+}
+.arrow-block {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 60px;
+  cursor: pointer;
+  //background-color: rgba(108, 197, 255, .1);
+  padding: 20px 0;
+  //style={{textAlign: "center", marginTop: '100px'}}
+}
+
+.people {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .age {
+    font-size: 30px;
+    margin-left: 20px;
+  }
+  .woman {
+    width: 200px;
+    height: 200px;
+    background: url("../images/woman.svg") no-repeat center center;
+    background-size: cover;
+  }
+  .man {
+    width: 200px;
+    height: 200px;
+    background: url("../images/man.svg") no-repeat center center;
+    background-size: contain;
+  }
+}
+
+@keyframes slide {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(0, 20%);
+  }
+}
+
