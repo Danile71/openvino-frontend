@@ -1,4 +1,21 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# OpenVino Hackaton Dashpanel Web Project
+
+In this project you can see statistics about video recognition customers who walking through you shop.
+### We had realized 4 cases:
+- Walking through shop - like entries
+- Face, age, gender recognizion when user has attention on the advise board
+- Hand recognizion when user show you hand to the camera
+- Show to customer qr-code with discount, if he show his hand 
+
+### Web service show to us:
+- Chart with total amount entries
+- 2 charts (women/men) with amount of advise focuses, amount of getted promocodes and amount of maked bought with promocodes 
+(all previous charts presented like sales funnel chart)
+- The oftenest regocnized age in case (c) divided by gender
+- 3 kind of donut chart with conversions: 
+    a. Entries / Focus
+    b. Focus / Getted promocodes
+    c. Focus / Maked buy
 
 ## Available Scripts
 
@@ -36,9 +53,3 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
