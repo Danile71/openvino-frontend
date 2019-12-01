@@ -2,9 +2,9 @@ import * as React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import {Body} from './Body';
-import {useCallback, useEffect, useState} from "react";
+import {useEffect, useState} from "react";
 import axios from 'axios';
-import {Simulate} from "react-dom/test-utils";
+import animateScrollTo from "animated-scroll-to";
 
 const App: React.FC = () => {
 
@@ -48,8 +48,12 @@ const App: React.FC = () => {
         }
     };
 
+    const goDown = (e: any) => {
+        animateScrollTo(900)
+    };
+
     return (
-    <div className="App">
+    <div className="App" onKeyDown={(e) => goDown(e)}>
         {
             serverError ? (
                 <div className="error">

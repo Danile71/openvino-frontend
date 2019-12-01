@@ -6,7 +6,6 @@ import {DonutChart} from "../DonutChart";
 import {FullChart} from "../FullChart";
 import animateScrollTo from 'animated-scroll-to';
 import './index.scss';
-import {useEffect, useRef} from "react";
 
 export const Body = ({genderData, totalData}: any) => {
 
@@ -44,7 +43,6 @@ export const Body = ({genderData, totalData}: any) => {
 
     return (
         <Container fluid={true}>
-            {/*{console.log([totalData.Total[0], genderData.TotalWomen.Total[0] + genderData.TotalMen.Total[0]])}*/}
         <h1 style={{padding: '40px 0 15px 0'}}>
             Воронка продаж
         </h1>
