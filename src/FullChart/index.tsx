@@ -78,8 +78,8 @@ export class FullChart extends React.Component<any, any> {
                 colors: this.props.colors
             },
             series: this.props.data
-        };
-    }
+        }
+    };
 
     render() {
         return (

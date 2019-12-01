@@ -2,6 +2,16 @@
   font-family: Ubuntu, sans-serif;
   text-align: center;
   padding: 20px;
-  overflow-x: hidden;
+  overflow: hidden;
   height: 1800px;
+}
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cat {
+  width: 120px;
+  height: 120px;
+  background: url("./images/cat.svg") no-repeat center center;
 }

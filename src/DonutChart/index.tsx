@@ -11,7 +11,7 @@ export class DonutChart extends React.Component<any, any> {
                 title: {
                     text: this.props.title,
                     style: {
-                        fontSize: '20px'
+                        fontSize: '22px'
                     }
                 },
                 labels: this.props.labels,
@@ -81,7 +81,7 @@ export class DonutChart extends React.Component<any, any> {
     render() {
         return (
             <div id="chart">
-                <Chart options={this.state.options} series={this.state.series} type="donut" width="360"/>
+                <Chart options={this.state.options} series={this.state.series} type="donut" width="340"/>
             </div>
         )
     }

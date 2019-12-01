@@ -6,7 +6,7 @@ import {DonutChart} from "../DonutChart";
 import {FullChart} from "../FullChart";
 import animateScrollTo from 'animated-scroll-to';
 import './index.scss';
-import {useRef} from "react";
+import {useEffect, useRef} from "react";
 
 export const Body = ({genderData, totalData}: any) => {
 
@@ -18,7 +18,11 @@ export const Body = ({genderData, totalData}: any) => {
         colors: ['#fffa62', '#ffcf7f', '#ff9090'],
         title: 'Женщины'
     };
-    console.log(totalData[0])
+
+    const bestMan = genderData.men[genderData.BestMan].name;
+    const bestWoman = genderData.women[genderData.BestWoman].name;
+    console.log(bestMan, bestWoman);
+
     const donuts = [
     {
         title: 'Эффективность галлереи',
@@ -36,7 +40,7 @@ export const Body = ({genderData, totalData}: any) => {
         series: [15, 8],
         labels: [`Получили промо-код (${15})`, `Купили товар (${8})`]
     }
-    ]
+    ];
 
     return (
         <Container fluid={true}>
@@ -75,7 +79,7 @@ export const Body = ({genderData, totalData}: any) => {
                 <div className="people">
                     <div className="woman" />
                     <div className="age">
-                        30 - 40 лет
+                        {bestWoman}
                     </div>
                 </div>
             </Col>
@@ -83,7 +87,7 @@ export const Body = ({genderData, totalData}: any) => {
                 <div className="people">
                     <div className="man" />
                     <div className="age">
-                        30 - 40 лет
+                        {bestMan}
                     </div>
                 </div>
             </Col>
