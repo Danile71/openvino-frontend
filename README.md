@@ -1,21 +1,21 @@
 # OpenVino Hackaton Dashpanel Web Project
 
-In this project you can see statistics about video recognition customers who walking through you shop.
-### We had realized 4 cases:
-- Walking through shop - like entries
-- Face, age, gender recognizion when user has attention on the advise board
-- Hand recognizion when user show you hand to the camera
-- Show to customer qr-code with discount, if he show his hand 
+In this project you can see statistics on video recognition of customers walking in front of your shop.
+### 4 cases were made:
+- Counting customers walkings in front of your shop
+- Face, age, gender recognizion when user pays attention on the advise screen
+- Hand recognizion when user shows his hand to the camera
+- Show customer qr-code with a discount after he shows his hand 
 
-### Web service show to us:
-- Chart with total amount entries
-- 2 charts (women/men) with amount of advise focuses, amount of getted promocodes and amount of maked bought with promocodes 
-(all previous charts presented like sales funnel chart)
-- The oftenest regocnized age in case (c) divided by gender
-- 3 kind of donut chart with conversions: 
+### Web service shows us:
+- Chart with a total amount of entries
+- 2 charts (women/men) with the amount of advert focuses, the amount of got promocodes and the amount of made purchases with promocodes 
+(all previous charts are presented as sales funnel chart)
+- The most often regocnized age in case (3) is divided by gender
+- 3 kinds of donut chart with conversions: 
     a. Entries / Focus
-    b. Focus / Getted promocodes
-    c. Focus / Maked buy
+    b. Focus / Got promocodes
+    c. Focus / Made purchases
 
 ## Available Scripts
 
